@@ -1,7 +1,7 @@
 import wazrix from '../assets/wazrix.png';
-// import bitbnsImg from '../assets/bitbns.png';
-// import colodaxImg from '../assets/colodax.png';
-// import zebpayImg from '../assets/zebpay.png';
+import bit from '../assets/bit.png';
+import colodax from '../assets/colodax.jpeg';
+import zebpay from '../assets/zebpay.png';
 
 
 const priceTableData = [
@@ -15,7 +15,6 @@ const priceTableData = [
         savings: "₹ 83,498",
         savingsNegative: true,
         imageUrl: wazrix
-        // background-image: url("../assets/wazrix.png"),
     },
     {
         id: 2,
@@ -26,7 +25,7 @@ const priceTableData = [
         difference: "8.58%",
         savings: "₹ 2,27,796",
         savingsNegative: false,
-        imageUrl: wazrix,
+        imageUrl: bit,
     },
     {
         id: 3,
@@ -37,7 +36,7 @@ const priceTableData = [
         difference: "-4.14%",
         savings: "₹ 1,10,074",
         savingsNegative: true,
-        imageUrl: wazrix,
+        imageUrl: colodax,
     },
     {
         id: 4,
@@ -48,8 +47,8 @@ const priceTableData = [
         difference: "-0.23%",
         savings: "₹ 6,110",
         savingsNegative: true,
-        imageUrl: wazrix,
-    },
+        imageUrl: zebpay,
+    }
 ];
 
 export default priceTableData;
