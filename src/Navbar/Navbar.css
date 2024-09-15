@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+  margin-left: 40px;
+}
+
+.title {
+  width: 33%;
+  background-image: url("../assets/HODLINFO.png");
+  height: 37px;
+  margin-top: 30px;
+  text-align: center;
+  width: 280px;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.middle {
+  margin-top: 35px;
+  width: 20.5%;
+  display: flex;
+  margin-left: 30px;
+  justify-content: space-around;
+}
+
+.end {
+  width: 21%;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 28px;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: #2e3241;
+  color: #fff;
+  padding: 6px 17px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+
+.temp {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.icon {
+  font-size: 20px;
+  background-color: #2e3241;
+}
+
+.caret {
+  margin-left: 10px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  position: absolute;
+  top: 64%;
+  left: 0;
+  background-color: white;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.dropdown-item {
+  padding: 2px;
+  padding-top: 3px;
+  padding-left: 13px;
+  width: 123px;
+  cursor: pointer;
+  background-color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #e2e2e2;
+}
+
+/* Circular Timer */
+.circular-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  background-color: #1d1f28; /* Dark background */
+}
+
+.progress-circle {
+  width: 38px;
+  height: 38px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee; /* Circle background */
+  stroke-width: 2.8;
+}
+
+.circle {
+  fill: none;
+  stroke: #3de3e1; /* The progress color */
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.35s;
+  transform: rotate(0deg);
+  transform-origin: 50% 50%;
+}
+
+.timer-text {
+  fill: #3dc3e1;
+  font-size: 1em;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+/* Telegram Button */
+.telegram {
+  background: #3dc6c1;
+  border: none;
+  height: 38px;
+  border-radius: 10px;
+  width: 172px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+}
+
+.icon2 {
+  background: #3dc6c1;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 6px;
+}
+
+/* Toggle Switch */
+.toggle-container {
+  width: 60px;
+  height: 33px;
+  background-color: #3dc6c1; /* Dark background */
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* The circle inside the toggle switch */
+.toggle-circle {
+  width: 25px;
+  height: 25px;
+  background-color: #2e3241; /* The circle color */
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 1px;
+  transition: transform 0.3s ease;
+}
+
+/* When toggled (switch on) */
+.toggle-container.toggled {
+  background-color: #2e3241; /* Change background color when toggled */
+}
+
+.toggle-container.toggled .toggle-circle {
+  transform: translateX(30px); /* Move the circle to the right when toggled */
+  background-color: #3dc6c1; /* Change the circle color when toggled */
+}
+
+
+
+/* Responsive for Phones (width below 768px) */
+@media (min-width: 300px) and (max-width: 767px){
+  .nav {
+    /* flex-direction: column; */
+    width: 100%;
+    height: 45px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .title {
+    height: 0.7em;
+    margin-top: 10px;
+    width: 30%;
+  }
+
+  .middle {
+    /* align-items: center;
+    margin-top: 5px; */
+    margin-top: 8px;
+    width: 28%;
+    margin-left: 10px;
+    display: flex;
+    /* margin-right: 20px; */
+    justify-content: space-between;
+  }
+
+  .dropdown-toggle {
+    padding: 1px 5px;
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .temp {
+    font-size: 8px;
+    width: 40px;
+    padding: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+
+  }
+  .icon {
+  font-size: 15px;
+}
+  .end{
+    align-items: center;
+    margin-top: 2px;
+    width: 40%;
+    margin-left: 20px;
+  }
+
+  .circular-timer {
+    height: 5vh;
+  }
+  .progress-circle {
+    width: 18px;
+    height: 18px;
+  }
+  
+
+  .telegram {
+    height: 18px;
+    margin-left: 5px;
+    border-radius: 8px;
+    width: 70px;
+    font-size:7px;
+    padding: 1px;
+  }
+
+  .icon2 {
+    background: #3dc6c1;
+    font-size: 10px;
+    margin-top: 2px
+  }
+
+/* Toggle Switch */
+.toggle-container {
+  width: 45px;
+  height: 20px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+/* The circle inside the toggle switch */
+.toggle-circle {
+  width: 13px;
+  height: 13px;
+  top: 4px;
+}
+
+}
+
+
+/* Responsive for Tablets (width between 768px and 1024px) */
+@media (min-width: 768px)  and (max-width: 1024px) {
+  .nav {
+    /* flex-direction: column; */
+    margin-right: 15px;
+    margin-left: 15px;
+    align-items: center;
+  }
+
+  .title {
+    width: 200px;
+    height: 30px;
+    margin-top: 0px;
+  }
+
+  .middle{
+    /* flex-direction: column; */
+    align-items: center;
+    margin-top: 0px;
+    width: 24%;
+    display: flex;
+    /* margin-right: 20px; */
+    justify-content: space-evenly;
+  }
+
+
+  .dropdown-toggle {
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .temp {
+    font-size: 11px;
+    width: 50px;
+    padding: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
+
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+   .end {
+    /* flex-direction: column; */
+    align-items: center;
+    margin-top: 12px;
+    width: 30%;
+  }
+
+  .circular-timer {
+    height: 7vh;
+  }
+  .progress-circle {
+    width: 25px;
+    height: 25px;
+  }
+  .telegram {
+    width: 140px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 10px;
+    align-items: center;
+  }
+
+  .icon2 {
+    background: #3dc6c1;
+    font-size: 14px;
+    margin-top: 2px
+  }
+
+  /* Toggle Switch */
+.toggle-container {
+  width: 50px;
+  height: 23px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+/* The circle inside the toggle switch */
+.toggle-circle {
+  width: 15px;
+  height: 15px;
+  top: 4px;
+}
+
+}
